@@ -1,0 +1,21 @@
+{
+  "name": "tanstack-nonce-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "start": "vite preview --port 3000",
+    "use:good": "npm i -E @tanstack/react-start@1.168.54 @tanstack/react-router@1.170.36",
+    "use:bad": "npm i -E @tanstack/react-start@1.168.55 @tanstack/react-router@1.170.37"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "1.170.37",
+    "@tanstack/react-start": "1.168.55",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "5.2.0",
+    "vite": "8.2.1"
+  }
+}
